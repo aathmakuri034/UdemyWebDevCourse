@@ -65,15 +65,25 @@
 
     <h2>More inputs</h2>
     <form action="/birds">
-      <input type="checkbox" name = "agree_tos" id = "agree" checked>
-      <label for="agree">I agree to all of the terms and conditions listed above</label>
+      <input type="checkbox" name="agree_tos" label="agree">
+      <label for="agree">I agree to everything</label>
       <p>
-        <label for="xs">XS:</label>
-        <input type="radio" name="size" id="xs" value = "xs">
-        <label for="s">S:</label>
-        <input type="radio" name="size" id="s" value = "s">
-        <label for="m">M:</label>
-        <input type="radio" name="size" id="m" value = "m">
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m">
+      </p>
+
+      <p>
+        <label for="meal">Please select your Entree</label>
+        <select name="meal" id="meal">
+          <option value="fish" selected>---Please select an option---</option>
+          <option value="fish">Fish</option>
+          <option value="fish">Veg</option>
+          <option value="fish">Steak</option>
+        </select>
       </p>
       <button>Submit</button>
     </form>
